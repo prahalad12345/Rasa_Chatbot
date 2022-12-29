@@ -1,0 +1,61 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: city1_info
+  examples: |
+    - [Mumbai](city)
+    - [Kolkata](city)
+    - [Jaipur](city)
+    - [Bengaluru](city)
+   
+
+- intent: city2_info
+  examples: |
+    - [Hyderabad](city2)
+    - [Chennai](city2)
+    - [Ahmedabad](city2)
+    - [Chandigarh](city2)
+    - [Lucknow](city2)
+
+- intent: find_distance
+  examples: |
+    - What is the distance between two cities
+    - Want to know the distance 
+    - What is the distance between
+    - Distance
+    - distance between
+    - distance between two cities 
+    - what is the distance 
+
+

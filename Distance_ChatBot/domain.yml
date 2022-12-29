@@ -1,0 +1,45 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - find_distance
+  - city1_info 
+  - city2_info
+
+entities:
+  - city
+  - city2
+
+slots:
+  city:
+    type: text
+  city2:
+    type: text
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+
+  utter_ask_start_city:
+  - text: "Tell me your start city? "
+
+  utter_ask_end_city:
+  - text: "Tell me your end city? "
+
+
+
+
+actions:
+- find_distance
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

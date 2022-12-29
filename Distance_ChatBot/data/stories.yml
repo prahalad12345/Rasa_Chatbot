@@ -1,0 +1,22 @@
+version: "2.0"
+
+stories:
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: distance_timezone_long
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_distance
+  - action: utter_ask_start_city
+  - intent: city1_info 
+  - action: utter_ask_end_city 
+  - intent: city2_info
+  - action: find_distance
+  - intent: goodbye 
+  - action: utter_goodbye
+
